@@ -85,17 +85,17 @@ a:hover {
 }
 
 .project {
-  border: 1px solid #dc2626;
+  border: 1px solid #343;
   border-radius: 0.4rem;
   margin: 0.8rem 0;
   padding: 1rem;
-  background-color: #1a1a1a;
+  background-color: #111;
 }
 
 .project h3 {
   font-size: 1.2rem;
   margin-bottom: 0.4rem;
-  color: #fca5a5;
+  color: #b71b1b;
 }
 
 .project p {
