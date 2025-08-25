@@ -4,56 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>6z7y.About</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- font -->
-    <style>
-      @font-face {
-        font-family: 'ComicShannsMono';
-        src: url('static/fonts/ComicShanns-font.otf') format('opentype');
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
+  <body>
+    <div class="container">
 
-  <body class="bg-black font-[ComicShannsMono] min-h-screen flex flex-col">
+      <!-- Main content -->
+      <main>
+        <h1>このサイトについて</h1>
 
-    <!-- Top row: header nav + main content side by side -->
-    <div class="flex justify-between items-start flex-1">
-
-      <main class="text-white m-6 p-5 rounded-3xl bg-gray-900 bg-opacity-30 border-r-2 border-red-600 shadow-md shadow-red-500">
-        <h1 class="text-2xl font-bold text-red-500">このサイトについて</h1>
-
-        <h2 class="mt-6 text-xl font-semibold text-red-500">My Story</h2>
-        <p class="mt-2 text-gray-300">
+        <h2>My Story</h2>
+        <p>
           I'm 6z7y. Back on Windows 7, my laptop was full of malware, ads, freezes, shutdowns, and overheating.  
           That pushed me to focus on privacy and low resource use. Now I run Void Linux with DWM.
         </p>
 
-        <h2 class="mt-6 text-xl font-semibold text-red-500">What I Enjoy</h2>
-        <p class="mt-2 text-gray-300">
-          I enjoy Japanese/English music for language learning and as coding background <a href="music.html" class="text-red-700 hover:text-red-900 hover:underline">my_music</a>.  
+        <h2>What I Enjoy</h2>
+        <p>
+          I enjoy Japanese/English music for language learning and as coding background 
+          <a href="music.html">my_music</a>.  
           I prefer clean, minimal setups so nothing distracts me.
         </p>
 
-        <h2 class="mt-6 text-xl font-semibold text-red-500">What I Do</h2>
-        <p class="mt-2 text-gray-300">
+        <h2>What I Do</h2>
+        <p>
           Spending most of my time alone at home has helped me focus on programming and languages.  
-          I don’t use social media — only Discord to stay in touch with people.
+          I don't use social media — only Discord to stay in touch with people.
         </p>
 
-        <h2 class="mt-6 text-xl font-semibold text-red-500">Programming Focus</h2>
-        <p class="mt-2 text-gray-300">
+        <h2>Programming Focus</h2>
+        <p>
           Learning Rust for about 5 months, aiming to build small, efficient tools.  
-          Once I’m be better in Rust, I plan to pick up C to explore low-level programming.
+          Once I'm better in Rust, I plan to pick up C to explore low-level programming.
         </p>
 
-        <h2 class="mt-6 text-xl font-semibold text-red-500">How I Keep Going</h2>
-        <p class="mt-2 text-gray-300">
-          I’m convinced that pain is a big part of my personality, driving me toward change and keeping distance from others. Patience has been essential to stay on this path.
+        <h2>How I Keep Going</h2>
+        <p>
+          I'm convinced that pain is a big part of my personality, driving me toward change and keeping distance from others. Patience has been essential to stay on this path.
         </p>
 
-        <h2 class="mt-6 text-xl font-semibold text-red-500">My Favorite Tools</h2>
-        <ul class="list-disc list-inside mt-2 text-gray-300 space-y-1">
+        <h2>My Favorite Tools</h2>
+        <ul>
           <li><b>st</b> — simple and fast terminal emulator.</li>
           <li><b>dmenu</b> — lightweight and efficient application launcher.</li>
           <li><b>tmux</b> — terminal multiplexer for managing sessions.</li>
@@ -66,23 +57,19 @@
         </ul>
       </main>
 
-
-      <!-- Nav on right -->
+      <!-- Nav -->
       <header>
-        <nav class="text-red-700 flex flex-col space-y-4 text-right p-3">
-          <a href="index.html" class="hover:underline hover:text-red-900 [writing-mode:vertical-rl] [text-orientation:upright]">
-            6z7y<span class="text-sm">サイト</span>
-          </a>
-          <a href="about.html" class="hover:underline hover:text-red-900 [writing-mode:vertical-rl] [text-orientation:upright]">
-            アバウト
-          </a>
+        <nav>
+          <a href="index.html">ホーム</a>
+          <a href="about.html">アバウト</a>
         </nav>
       </header>
+
     </div>
 
-    <!-- Footer -->
-    <footer class="text-red-600 p-4 text-center">
-      <p>© 2025 6z7y</p>
+    <footer>
+      <p>Copyright © 6z7y 2025</p>
     </footer>
+
   </body>
 </html>

@@ -1,80 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>6z7y.Music</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    @font-face {
-      font-family: 'ComicShannsMono';
-      src: url('static/fonts/ComicShanns-font.otf') format('opentype');
-    }
-  </style>
-</head>
-<body class="bg-black font-[ComicShannsMono] min-h-screen flex flex-col">
-  <div class="flex justify-between items-start flex-1">
-    <main class="text-white m-6 p-5 rounded-3xl bg-gray-900 bg-opacity-30 border-r-2 border-red-600 shadow-md shadow-red-500 w-full">
-      <h1 class="text-2xl font-bold text-red-500 mb-4">ミュージック</h1>
-      <div id="music-list" class="space-y-4"></div>
-    </main>
-    <header>
-      <nav class="text-red-700 flex flex-col space-y-4 text-right p-3">
-        <a href="index.html" class="hover:underline hover:text-red-900 [writing-mode:vertical-rl] [text-orientation:upright]">
-          6z7y<span class="text-sm">サイト</span>
-        </a>
-        <a href="about.html" class="hover:underline hover:text-red-900 [writing-mode:vertical-rl] [text-orientation:upright]">
-          アバウト
-        </a>
-      </nav>
-    </header>
-  </div>
-  <footer class="text-red-600 p-4 text-center">
-    <p>© 2025 6z7y</p>
-  </footer>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6z7y.Music</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Main content -->
+      <main>
+        <h1>ミュージック</h1>
+        <div id="music-list"></div>
+      </main>
 
-  <script>
-    const tracks = [
-      "【メンヘラ病み曲】シニタイちゃん【IA】(Shinitai-chan - Official Video).mp3",
-      "fripSide - dual existence（Audio）.mp3",
-      "【公式】撥条少女時計 feat.初音ミク【オリジナル曲】.mp3",
-      "《GReeeeN》愛唄 歌ってみた ♪春歌みこと♪《ウタゴエ放送部》.mp3",
-      "Nightcore - Battlefield.mp3",
-      "「Nightcore」 Reckless - Madison Beer ♡ (Lyrics).mp3",
-      "『魔法少女ノ魔女裁判』オープニングムービー.mp3",
-      "《ノゲノラ》This game 歌ってみた ♪春歌みこと♪《鈴木このみ》.mp3",
-      "Nightcore - Bad Luck (Lyrics)  ｜ Cjbeards ft. DEVMO.mp3",
-      "藍井エイル「アイリス」 Music Video.mp3",
-      "Nightcore - Britney Spears ⧹⧹ Circus (Lyrics).mp3",
-      "Nightcore - Bye Bye Bye (Rock Version) (Lyrics).mp3",
-      "Reason - Nami Tamaki ⧸ Yuccho (Cover) 【Mobile Suit Gundam SEED DESTINY ED】Full.mp3",
-      "Sizuk⧸俊龍 - Para Bellum［Music Video］ ⧸TVアニメ「キミと僕の最後の戦場、あるいは世界が始まる聖戦 Season Ⅱ」エンディング主題歌.mp3",
-      "AliA - Kakurenbo [かくれんぼ] lyrics 60fps.mp3",
-      "Nightcore - Accelerate (Lyrics).mp3",
-      "《蕩れ》君の知らない物語 歌ってみた ♪音羽ララ♪.mp3",
-      "Shield and Flame.mp3"
-    ];
+      <!-- Nav -->
+      <header>
+        <nav>
+          <a href="index.html">ホーム</a>
+          <a href="about.html">アバウト</a>
+        </nav>
+      </header>
+    </div>
 
-    const musicList = document.getElementById("music-list");
+    <footer>
+      <p>Copyright © 6z7y 2025</p>
+    </footer>
 
-    // Generate music players only
-    tracks.forEach(track => {
-      const trackDiv = document.createElement("div");
-      trackDiv.classList.add("bg-gray-800", "p-3", "rounded", "flex", "flex-col", "space-y-2");
+    <script>
+      const tracks = [
+        "【メンヘラ病み曲】シニタイちゃん【IA】(Shinitai-chan - Official Video).mp3",
+        "fripSide - dual existence（Audio）.mp3",
+        "【公式】撥条少女時計 feat.初音ミク【オリジナル曲】.mp3",
+        "《GReeeeN》愛唄 歌ってみた ♪春歌みこと♪《ウタゴエ放送部》.mp3",
+        "Nightcore - Battlefield.mp3",
+        "「Nightcore」 Reckless - Madison Beer ♡ (Lyrics).mp3",
+        "『魔法少女ノ魔女裁判』オープニングムービー.mp3",
+        "《ノゲノラ》This game 歌ってみた ♪春歌みこと♪《鈴木このみ》.mp3",
+        "Nightcore - Bad Luck (Lyrics)  ｜ Cjbeards ft. DEVMO.mp3",
+        "藍井エイル「アイリス」 Music Video.mp3",
+        "Nightcore - Britney Spears ⧹⧹ Circus (Lyrics).mp3",
+        "Nightcore - Bye Bye Bye (Rock Version) (Lyrics).mp3",
+        "Reason - Nami Tamaki ⧸ Yuccho (Cover) 【Mobile Suit Gundam SEED DESTINY ED】Full.mp3",
+        "Sizuk⧸俊龍 - Para Bellum［Music Video］ ⧸TVアニメ「キミと僕の最後の戦場、あるいは世界が始まる聖戦 Season Ⅱ」エンディング主題歌.mp3",
+        "AliA - Kakurenbo [かくれんぼ] lyrics 60fps.mp3",
+        "Nightcore - Accelerate (Lyrics).mp3",
+        "《蕩れ》君の知らない物語 歌ってみた ♪音羽ララ♪.mp3",
+        "Shield and Flame.mp3"
+      ];
 
-      const trackName = document.createElement("span");
-      trackName.textContent = track;
-      trackName.classList.add("text-white", "font-semibold");
+      const musicList = document.getElementById("music-list");
 
-      const audioPlayer = document.createElement("audio");
-      audioPlayer.controls = true;
-      audioPlayer.src = `static/music/${encodeURIComponent(track)}`;
-      audioPlayer.classList.add("w-full");
+      tracks.forEach(track => {
+        const box = document.createElement("div");
+        box.className = "music-box";
 
-      trackDiv.appendChild(trackName);
-      trackDiv.appendChild(audioPlayer);
-      musicList.appendChild(trackDiv);
-    });
-  </script>
-</body>
+        const name = document.createElement("span");
+        name.textContent = track;
+        name.style.color = "white";
+        name.style.fontWeight = "600";
+
+        const audio = document.createElement("audio");
+        audio.controls = true;
+        audio.src = `static/music/${encodeURIComponent(track)}`;
+
+        box.appendChild(name);
+        box.appendChild(audio);
+        musicList.appendChild(box);
+      });
+    </script>
+  </body>
 </html>

@@ -4,64 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>6z7y.Home</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- change font -->
-    <style>
-      @font-face {
-        font-family: 'ComicShannsMono';
-        src: url('static/fonts/ComicShanns-font.otf') format('opentype');
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
-
-  <body class="bg-black font-[ComicShannsMono] min-h-screen flex flex-col">
-
+  <body>
     <!-- Top row: header nav + main content side by side -->
-    <div class="flex justify-between items-start flex-1">
-
+    <div class="container">
       <!-- Main content -->
-      <main class="text-white m-6 p-5 rounded-3xl bg-gray-900 bg-opacity-30 border-r-2 border-red-600 shadow-md shadow-red-500">
-        <h1 class="text-2xl font-bold text-red-500">はじめまして！ゲスト</h1>
-        <p class="mt-4">
-          i Just a normal person who learning new things 
-          and try building simple tools that actually help people <a href="about.html" class="text-red-700 hover:text-red-900 hover:underline">see_more</a>.
+      <main>
+        <h1>はじめまして！ゲスト</h1>
+        <p>
+          I'm just a person learning new things  
+          and building simple tools to help others.  
+          <a href="about.html">See more</a>.
         </p>
-        <h2 class="text-2xl mt-2 font-bold text-red-500">スキル</h2>
-          <ul class="list-disc list-inside mt-2 ml-4">
-            <li class="py-1">Rust</li>
-            <li class="py-1">Html/Tailwindcss</li>
-          </ul>
-        <h2 class="text-2xl mt-2 font-bold text-red-500">マイプロジェクト</h2>
-          <div class="border border-red-600 rounded m-3 p-3 max-w-xs">
-            <a href="https://github.com/6z7y/shesh" target="_blank" class="text-red-700 hover:text-red-300">
-              <h3 class="font-bold">Shesh</h3>
-              <p class="text-sm text-gray-300 mt-1">A simple shell for your terminal</p>
-            </a>
-          </div>
-        <h2 class="text-2xl mt-2 font-bold text-red-500">コンタクト</h2>
-        <ul class="list-disc list-inside mt-2 ml-4">
-          <li class="py-1">discord: @6z7y</li>
-          <li class="py-1"><a href="https://github.com/6z7y" class="text-red-700 hover:underline hover:text-red-900">github</a></li>
+
+        <h2>スキル</h2>
+        <ul>
+          <li>Rust</li>
+          <li>Html/CSS</li>
+        </ul>
+
+        <h2>マイプロジェクト</h2>
+        <div class="project">
+          <a href="https://github.com/6z7y/shesh" target="_blank">
+            <h3>Shesh</h3>
+            <p>A simple shell for your terminal</p>
+          </a>
+        </div>
+
+        <h2>コンタクト</h2>
+        <ul>
+          <li>discord: @6z7y</li>
+          <li><a href="https://github.com/6z7y">github</a></li>
         </ul>
       </main>
 
       <!-- Nav on right -->
       <header>
-        <nav class="text-red-700 flex flex-col space-y-4 text-right p-3">
-          <a href="index.html" class="hover:underline hover:text-red-900 [writing-mode:vertical-rl] [text-orientation:upright]">
-            6z7y<span class="text-sm">サイト</span>
-          </a>
-          <a href="about.html" class="hover:underline hover:text-red-900 [writing-mode:vertical-rl] [text-orientation:upright]">
-            アバウト
-          </a>
+        <nav>
+          <a href="index.html">ホーム</a>
+          <a href="about.html">アバウト</a>
         </nav>
       </header>
     </div>
 
     <!-- Footer -->
-    <footer class="text-red-600 p-4 text-center">
-      <p>© 2025 6z7y</p>
+    <footer>
+      <p>Copyright © 6z7y 2025</p>
     </footer>
   </body>
 </html>
