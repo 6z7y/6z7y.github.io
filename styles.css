@@ -96,7 +96,9 @@ a:hover {
 .project {
   border: 1px solid #343;
   border-radius: 0.4rem;
-  margin: 0.8rem 0;
+  /* margin: 0.8rem 0; */
+  border-left: solid #b71;
+  margin: 1rem;
   padding: 1rem;
   background-color: #111;
 }
@@ -110,7 +112,7 @@ a:hover {
 .project p {
   color: #d1d5db;
   font-size: 0.9rem;
-  margin: 0;
+  padding-bottom: 0.3rem;
 }
 
 header {
