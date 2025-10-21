@@ -153,21 +153,21 @@ header nav a:hover {
 .music-box {
   border: 1px solid #dc2626;
   border-radius: 0.4rem;
-  margin: 0.8rem 0;
-  padding: 1rem;
-  background-color: #1a1a1a;
+  margin: 0.9rem 0;
+  padding: 0.2rem;
+  /* background-color: #1a1a1a; */
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.music-box span {
-  color: #fca5a5;
-  font-weight: 600;
-}
-
-.music-box audio {
+/* Make iframes responsive */
+.music-box iframe {
   width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 0.25rem;
 }
 
 /* Improved Footer */

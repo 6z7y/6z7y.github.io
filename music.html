@@ -28,44 +28,34 @@
     </footer>
 
     <script>
-      const tracks = [
-        "【メンヘラ病み曲】シニタイちゃん【IA】(Shinitai-chan - Official Video).mp3",
-        "fripSide - dual existence（Audio）.mp3",
-        "【公式】撥条少女時計 feat.初音ミク【オリジナル曲】.mp3",
-        "《GReeeeN》愛唄 歌ってみた ♪春歌みこと♪《ウタゴエ放送部》.mp3",
-        "Nightcore - Battlefield.mp3",
-        "「Nightcore」 Reckless - Madison Beer ♡ (Lyrics).mp3",
-        "『魔法少女ノ魔女裁判』オープニングムービー.mp3",
-        "《ノゲノラ》This game 歌ってみた ♪春歌みこと♪《鈴木このみ》.mp3",
-        "Nightcore - Bad Luck (Lyrics)  ｜ Cjbeards ft. DEVMO.mp3",
-        "藍井エイル「アイリス」 Music Video.mp3",
-        "Nightcore - Britney Spears ⧹⧹ Circus (Lyrics).mp3",
-        "Nightcore - Bye Bye Bye (Rock Version) (Lyrics).mp3",
-        "Reason - Nami Tamaki ⧸ Yuccho (Cover) 【Mobile Suit Gundam SEED DESTINY ED】Full.mp3",
-        "Sizuk⧸俊龍 - Para Bellum［Music Video］ ⧸TVアニメ「キミと僕の最後の戦場、あるいは世界が始まる聖戦 Season Ⅱ」エンディング主題歌.mp3",
-        "AliA - Kakurenbo [かくれんぼ] lyrics 60fps.mp3",
-        "Nightcore - Accelerate (Lyrics).mp3",
-        "《蕩れ》君の知らない物語 歌ってみた ♪音羽ララ♪.mp3",
-        "Shield and Flame.mp3"
+      const videoIds = [
+        "twUFbqyul_M",
+        "nCQ_zZIiGLA",
+        "eBo3LU7Do9o",
+        "sB1e_0jkvE8", 
+        "DLdhX5fMDEs",
+        "w2HuQ95Huxw",
+        "PisaMxbmk9Q",
+        "Pn4zz6ZdEU0"
       ];
 
       const musicList = document.getElementById("music-list");
 
-      tracks.forEach(track => {
+      videoIds.forEach(id => {
         const box = document.createElement("div");
         box.className = "music-box";
 
-        const name = document.createElement("span");
-        name.textContent = track;
-        name.style.color = "white";
-        name.style.fontWeight = "600";
+        const iframe = document.createElement("iframe");
+        iframe.width = "560";
+        iframe.height = "315";
+        iframe.src = `https://www.youtube.com/embed/${id}`;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+        iframe.allowFullscreen = true;
 
-        const audio = document.createElement("audio");
-        audio.controls = true;
-        audio.src = `static/music/${encodeURIComponent(track)}`;
-
-        box.appendChild(name);
-        box.appendChild(audio);
+        box.appendChild(iframe);
         musicList.appendChild(box);
       });
     </script>
